@@ -136,7 +136,7 @@ fun SignUpScreen() {
     CustomTextField(
         value = password,
         onValueChange = { password = it },
-        label = "Password",
+        label = "Create Password",
         leadingIcon = Icons.Default.Lock,
         modifier = Modifier
             .padding(top = 10.dp)
@@ -231,7 +231,7 @@ fun SignUpScreen() {
           onClick = {},
       ) {
         Text(
-            text = "Login In",
+            text = "LogIn",
             fontSize = 16.sp,
             color = colorResource(id = R.color.yellow),
             style = TextStyle(fontWeight = FontWeight.Bold),

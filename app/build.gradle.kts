@@ -5,6 +5,7 @@ plugins {
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
     kotlin("plugin.serialization") version "2.2.21"
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -57,6 +58,11 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.firebase.auth)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
+    implementation(libs.firebase.firestore)
     debugImplementation(libs.androidx.compose.ui.tooling)
     // Testing
     testImplementation(libs.junit)
