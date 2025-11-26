@@ -7,8 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import com.example.shoppingapp.presentation.SignUpScreen
 import com.example.shoppingapp.ui.theme.ShoppingAppTheme
 import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
+import dagger.hilt.android.AndroidEntryPoint
 
-@EntryPoint
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
